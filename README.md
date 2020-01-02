@@ -25,7 +25,7 @@ S192V00000000-S192V99999999
 S172V00000000-S172V99999999
 S182V00000000-S182V99999999
 
-"TISCALI_****" Range:
+"TISCALI_xxxx" Range:
 S172V00000000-S172V99999999
 S182V00000000-S182V99999999
 ```
@@ -34,9 +34,9 @@ S182V00000000-S182V99999999
 - The first charaters is always an 'S'.
 - The second and third characters should be the year of production ( 2017/2018/2019 for the examples above).
 - The string "2V" should be costant for the SSID above, it may be the family's model identifier.
-- The rest of the string is different from router to router, but is possibile to generate a dictionary for all the combination to use in combination  with Hashcat.
+- The rest of the string is different from router to router, but is possibile to generate a dictionary for all the combinations to use alongside with Hashcat.
 
-### List of Zyxel router's
+### List of Zyxel router's with the year of production/last fw update
  [Here](https://pastebin.com/guGVzeNj)
 
 ## Usage
@@ -52,12 +52,15 @@ zykgen.exe -c -l 10 182000000000 182000000010
 Will create a dictionary of the WPA passwords with 10 charaters long of the serials ranging from S182V00000000 to S182V00000010 using the 'cosmopolitan' algorithm 
 
 ### Type of WPA algorithms 
-- *Cosmopolitan* generate WPA password with this combination of charaters: [0-9][A-Z]
-- *Negroni* generate WPA password with this combination of charaters: [0-9][A-Z]
-- *Mojito* generate WPA password with this combination of charaters: [0-9][A-Z][a-z]
+- **Cosmopolitan** generate WPA password with this combination of charaters: [0-9][A-Z]
+- **Negroni** generate WPA password with this combination of charaters: [0-9][A-Z]
+- **Mojito** generate WPA password with this combination of charaters: [0-9][A-Z][a-z]
 
 For example the routers above use the Cosmopolitan algorithm, but other router could use another one. 
-In order to find which algotithm you router use just look at the back of your router, or if you are unable to do it use google to find images of the back.
+In order to find which algotithm you router use just look at the back of your router, or if you are unable to do it use google to find images of the back. (or just try all of them untill you find the correct one)
+
+### Related problem
+- The **VMG8823-B50B** Model transmit his serial in the probe response, so it's  much much more easy to generate his passwords without guessing his serial.
 
 ## Disclaimer
 Don't use it for illegal purpose, this project is mainly used for research purpose and I'm not responsable of it.
