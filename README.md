@@ -12,7 +12,7 @@ https://medium.com/@lucio.corsa/reversing-zyxel-vmg8823-b50b-wpa-algorithm-gener
 
 ## Problem
 
-This routers generate their default WPA password using their S/N (serial number), but this number can be easly guessed becouse have got an easy pattern.
+This routers generate their default WPA password using their S/N (serial number), but this number can be easly guessed because have got an easy pattern.
 
 ### Example
 
