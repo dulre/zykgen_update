@@ -34,7 +34,7 @@ S182V00000000-S182V99999999
 - The first charaters is always an 'S'.
 - The second and third characters should be the year of production ( 2017/2018/2019 for the examples above).
 - The string "2V" should be costant for the SSID above, it may be the family's model identifier.
-- The rest of the string is different from router to router, but is possibile to generate a dictionary for all the combinations to use alongside with Hashcat.
+- The rest of the string is different from router to router, but is possibile to generate a dictionary for all the combinations to use alongside with Hashcat, and it is just a numerical string [0-9].
 
 ### List of Zyxel router's with the year of production/last fw update
  [Here](https://pastebin.com/guGVzeNj)
