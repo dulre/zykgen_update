@@ -3,11 +3,11 @@
 https://medium.com/@lucio.corsa/reversing-zyxel-vmg8823-b50b-wpa-algorithm-generation-for-fun-e926e45bf8f3
 
 ## Affected SSID
-
+'''
 "Home&Life SuperWiFi-xxxx" (Password length 16 charaters)
 "Infostrada-xxxxxx" (Password length 10 charaters)
 "TISCALI_xxxx" (Password length 10 charaters)
-
+'''
 
 
 ## Problem
