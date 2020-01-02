@@ -43,7 +43,7 @@ S182V00000000-S182V99999999
 ```
 zykgen (-m|-n|-c) [-l <length> -L <letter>] <startserial> <endserial> 
 ```
-Using the command above will create a dictionary in the root directory with all the combination of WPA passwords of the inpunt range, using the specified algorithm, the default letter is the 'V' (which is the fourth letter), while the first `'S'` is added automatically and you don't need to insert it, just skip it.
+Using the command above will create a dictionary in the root directory with all the combination of WPA passwords of the inpunt range, using the specified algorithm, the default letter is the `'V'` (which is the fourth letter), while the first `'S'` is added automatically and you don't need to insert it, just skip it.
   
 ### Examples
 ```
